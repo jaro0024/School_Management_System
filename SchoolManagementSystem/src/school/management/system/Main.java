@@ -32,6 +32,10 @@ public class Main {
 
         School ghs = new School(teacherList, studentList);
 
+        Teacher gloria = new Teacher(4, "GLoria", 800);
+
+        ghs.addTeacher(gloria);
+
         gabriela.payFees(5000);
         alexander.payFees(6000);
         System.out.println("GHS has earned $" + ghs.getTotalMoneyEarned());
@@ -40,6 +44,16 @@ public class Main {
         sarah.receiveSalary(sarah.getSalary());
         System.out.println("GHS has spent for salary to " + sarah.getName() + " and now has $" +
                 ghs.getTotalMoneyEarned());
+
+        john.receiveSalary(john.getSalary());
+        System.out.println("GHS has spent for salary to " + john.getName() + " and now has $" +
+                ghs.getTotalMoneyEarned());
+
+        System.out.println(alexander);
+
+        felicia.receiveSalary(felicia.getSalary());
+        System.out.println(felicia);
+
     }
 }
 
